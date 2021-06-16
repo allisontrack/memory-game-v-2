@@ -81,7 +81,7 @@ function createDivsForColors(colors) {
 let card1 = null;
 let card2 = null;
 
-// TODO: Implement this function!
+// Clicking a card should change the background color to be the color of the class it has:
 
 function handleCardClick(event) {
   card = event.target;
@@ -92,7 +92,6 @@ function handleCardClick(event) {
   setCards();
 }
 
-// Clicking a card should change the background color to be the color of the class it has:
 //changing the card background color using a class
 // set card one and card two
 
@@ -132,3 +131,14 @@ function resetCards() {
   card1 = null;
   card2 = null;
 }
+
+
+//to clear the board and start again
+const startOverBtn = document.querySelector('#start-over');
+
+startOverBtn.addEventListener('click', function(event) {
+  while (gameContainer.firstChild) {
+    gameContainer.removeChild(gameContainer.firstChild);
+  }
+  console.log('you clicked start again');
+})
