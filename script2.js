@@ -132,7 +132,6 @@ function resetCards() {
   card2 = null;
 }
 
-
 //to clear the board and start again
 const startOverBtn = document.querySelector('#start-over');
 
