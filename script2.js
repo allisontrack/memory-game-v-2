@@ -86,7 +86,7 @@ let card2 = null;
 function handleCardClick(event) {
   card = event.target;
   // this will handle a click on an already revealed card
-  if (card === card1) {
+  if (card.style.backgroundColor) {
     return;
   }
   setCards();
